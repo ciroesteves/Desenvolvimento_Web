@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!-- Comentários -->
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Encomendar Bolo</title>
+        <h1>Pães Doces e Bolos</h1>
+        <ul>
+            <li>
+                <a href="../index.html">Páginal Principal</a>   
+            </li>
+            <li>
+                <a href="Index_Encomendas.html">Encomendar Bolo</a>
+            </li>
+        </ul>
+    </head>
+    <body>
+        <h2>
+            Encomendar Bolo
+        </h2>
+        <form method="GET">
+            Nome: <input type="text" name="nome" size="35" maxlength="35" placeholder="Nome Completo" autofocus/>
+            DDD (<input type="text" name="DDD" size="2" maxlength="2" placeholder="DDD" />)
+            Telefone: <input type="text" name="telefone" size="10" maxlength="10" placeholder="Telefone">
+            <br/>  <br/>  
+        
+            <table border>
+            <caption>
+                Bolos
+            </caption>
+            <tr>
+                <td>
+                    <embed src="../Anexos_Recursos/Bolo01.png" width="200"/>
+                </td>
+                <td>
+                    <embed src="../Anexos_Recursos/Bolo02.png" width="200"/>
+                </td>
+                <td>
+                    <embed src="../Anexos_Recursos/Bolo03.png" width="200"/>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Chocolate
+                </th>
+                <th>
+                    Frutas
+                </th>
+                <th>
+                    Misto
+                </th>
+            </tr>
+        </table>
+        <br/>
+        Sabor: <select name="sabor" required>
+            <option value="" disabled selected>Escolha...</option>
+            <option value="Chocolate">Chocolate</option>    
+            <option value="Frutas">Frutas</option>
+            <option value="Misto">Misto</option>
+        </select>
+        Tipo: <input type="radio" name="tipo" value="Simples"/>Simples
+        <input type="radio" name="tipo" value="Decorado"/>Decorado
+        <br /><br/>
+        Tamanho: <input type="number" min="1" max="10" name="tamanho"/>
+        <input type="checkbox" name="diet" value="sim"/>Diet?
+        <br/><br/>
+        Observações:<br />
+        <textarea name="observacoes" rows="3" cols="80" placeholder="Observações sobre o pedido."></textarea>
+        <br/><br/>
+        <input type="submit" value="Enviar Pedido">
+        <input type="reset" value="Limpar">
+        </form>
+    </body>
+</html>
